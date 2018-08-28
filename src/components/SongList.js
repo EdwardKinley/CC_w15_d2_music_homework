@@ -6,6 +6,7 @@ class SongList extends React.Component {
     const songComponents = this.props.songs.map((entry) => {
       return (<SongDetail
         position={this.props.songs.indexOf(entry)+1}
+        image={entry["im:image"][2].label}
         title={entry["im:name"].label}
         artist={entry["im:artist"].label}
         price={entry["im:price"].label}
