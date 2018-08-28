@@ -18,3 +18,7 @@ td {
   background-color: linen;
   margin: 1rem auto 0 auto;
 }
+
+.table-row {
+  background-color: palegreen;
+}
