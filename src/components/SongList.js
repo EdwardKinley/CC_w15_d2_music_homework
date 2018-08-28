@@ -7,6 +7,7 @@ class SongList extends React.Component {
       return (<SongDetail
         position={this.props.songs.indexOf(entry)+1}
         image={entry["im:image"][2].label}
+        previewLink={entry.link[1].attributes.href}
         title={entry["im:name"].label}
         artist={entry["im:artist"].label}
         artistLink={entry["im:artist"].attributes.href}
