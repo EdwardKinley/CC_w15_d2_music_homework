@@ -5,7 +5,7 @@ const SongDetail = function(props) {
     <tr className="table-row">
       <td>#{props.position}</td>
       <td><a href={props.previewLink} target="_blank"><img src={props.image} alt={props.title} /></a></td>
-      <td>{props.title}</td>
+      <td><a href={props.previewLink} target="_blank">{props.title}</a></td>
       <td><a href={props.artistLink} target="_blank">{props.artist}</a></td>
       <td>{props.price}</td>
     </tr>
